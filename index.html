@@ -2,33 +2,31 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Limón Giratorio 🍋</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Limón Girando</title>
   <style>
     body {
-      margin: 0;
-      background: #f2f2f2;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      font-family: sans-serif;
+      margin: 0;
+      background: #f2f2f2;
     }
+
     .limon {
       width: 200px;
+      height: 200px;
       animation: girar 5s linear infinite;
     }
+
     @keyframes girar {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
   </style>
 </head>
 <body>
-  <img class="limon" src="limon.svg" alt="Limón girando">
+  <img src="limon.svg" alt="Limón girando" class="limon" />
 </body>
 </html>
